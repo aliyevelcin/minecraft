@@ -11,7 +11,7 @@
 </head>
 <body style="background-color: black;">
      <nav class="navbar navbar-expand-lg navbar-dark ">
-  <a class="navbar-brand" href="#"><img style="width: 200px;" src="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/logos/Global-Header_MCCB-Logo_300x51.svg" alt=""></a>
+  <a class="navbar-brand" href="{% url 'core:home' %}"><img style="width: 200px;" src="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/logos/Global-Header_MCCB-Logo_300x51.svg" alt=""></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -37,6 +37,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Поддержка</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link disabled" href="{% url 'core:dates' %}">Date</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">

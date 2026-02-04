@@ -23,7 +23,7 @@ def games(request):
 
 def dates(request):
    
-    return render(request,'dates.html',context)
+    return render(request,'dates.html')
 
 def detailpages(request,id):
     game = Games.objects.get(id=id)
